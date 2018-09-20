@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Justine Joshua Quiazon">
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    </head>
+    <body>
+        <noscript>
+            <strong>We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <script type="x-shader/x-vertex" id="wrapVertexShader">
+            #define PI 3.1415926535897932384626433832795
+            attribute float size;
+            void main() {
+                vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+                gl_PointSize = 3.0;
+                gl_Position = projectionMatrix * mvPosition;
+            }
+        </script>
+        <script type="x-shader/x-fragment" id="wrapFragmentShader">
+            uniform sampler2D texture;
+            void main(){
+                vec4 textureColor = texture2D( texture, gl_PointCoord );
+                if ( textureColor.a < 0.3 ) discard;
+                vec4 dotColor = vec4(1.00, 0.60, 0.00, 0.3);
+                vec4 color = dotColor * textureColor;
+                gl_FragColor = color;
+            }
+        </script>
+    </body>
+</html>

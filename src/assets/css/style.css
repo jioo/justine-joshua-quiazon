@@ -1,0 +1,11 @@
+.has-elevation {
+    z-index: 100;
+}
+
+.vue-typer .custom.char.typed {
+    color: #FFFFFF;
+}
+
+.vue-typer .custom.caret {
+    display: none;
+}
