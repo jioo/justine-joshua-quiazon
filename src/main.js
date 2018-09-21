@@ -1,11 +1,11 @@
 import '@babel/polyfill'
 import Vue from 'vue'
-import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import Meta from 'vue-meta'
 import VueTyperPlugin from 'vue-typer'
 import VueParticles from 'vue-particles'
+import './plugins/vuetify'
 import './assets/css/style.css'
 import './registerServiceWorker'
 

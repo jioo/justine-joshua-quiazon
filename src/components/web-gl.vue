@@ -29,10 +29,6 @@
             }
         },
 
-        created () {
-            console.log(this.computedRadius)
-        },
-
         mounted () {
             const asset = require('@/assets/images/dot.png')
 
