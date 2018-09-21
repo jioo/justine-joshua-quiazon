@@ -8,7 +8,10 @@
                         {{ quote }}
                         <v-icon class="white--text">format_quote</v-icon>
                     </blockquote>
-                    <p class="text-xs-right">{{ quoteBy }}</p>
+                    <h4 class="subheading orange--text text--lighten-1 text-xs-center">- {{ quoteBy }}</h4>
+                    <div class="text-xs-center" v-for="(item, index) in titles" :key="index">
+                        {{ item.name }}
+                    </div>
                 </v-flex>
             </v-layout>
             <vue-particles 
@@ -25,10 +28,13 @@
     export default {
         data () {
             return {
-                quote: 'Computer programming is an art, because it applies accumulated knowledge to the world, ' +
-                'because it requires skill and ingenuity, and especially because it produces objects of beauty. ' +
-                'A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better.',
-                quoteBy: 'Donald Knuth'
+                quote: 'We like to think we spend our time power typing, ' +
+                'but we actually spend most of our time staring into the abyss.',
+                quoteBy: 'Douglas Crockford',
+                titles: [
+                    { name: 'principal discoverer of JSON, ' },
+                    { name: 'creator of JSLint' }
+                ]
             }
         },
 
