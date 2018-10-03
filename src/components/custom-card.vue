@@ -11,11 +11,9 @@
         </v-card-text>
         <v-card-text>
             <v-layout row wrap align-center>
-                <ul v-for="(item, index) in items" :key="index">
-                    <li class="subheading" >
-                    {{ item.name }}
-                    </li>
-                </ul>
+                <div v-for="(item, index) in items" :key="index" class="text-xs-center">
+                    <v-chip class="white--text" color="orange">{{ item.name }}</v-chip>
+                </div>
             </v-layout>
         </v-card-text>
     </v-card>
