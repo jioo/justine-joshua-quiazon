@@ -7,6 +7,7 @@
             <filler />
             <testimonials />
             <contact />
+            <scroll-to-top />
             <snackbar />
         </v-content>
         <app-footer />
@@ -20,6 +21,7 @@
     import Filler from '@/components/filler'
     import Testimonials from '@/components/testimonials'
     import Contact from '@/components/contact'
+    import ScrollToTop from '@/components/scroll-to-top'
     import Snackbar from '@/components/snackbar'
     import AppFooter from '@/components/footer'
 
@@ -31,6 +33,7 @@
             Filler,
             Testimonials,
             Contact,
+            ScrollToTop,
             Snackbar,
             AppFooter
         }
