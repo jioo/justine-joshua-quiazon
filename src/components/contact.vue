@@ -9,7 +9,7 @@
                 </v-flex>
 
                 <v-flex md3 sm8 xs12 v-for="(contact) in contacts" :key="contact.value" class="my-2">
-                    <v-card dark ripple hover @click.prevent.native="copyToClipboard(contact.value)" color="grey darken-2" class="pointer">
+                    <v-card dark ripple hover @click.prevent.native="copyToClipboard(contact.value)" color="grey darken-2" class="pointer rounded-card">
                         <v-card-text>
                             <v-icon x-large color="orange">{{ contact.icon }}</v-icon> <br />
                             <h3 class="mt-2">{{ contact.value }}</h3>
@@ -104,5 +104,9 @@
 <style scoped>
     .pointer {
         cursor: pointer;
+    }
+
+    .rounded-card{
+        border-radius:40px;
     }
 </style>

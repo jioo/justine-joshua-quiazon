@@ -10,7 +10,10 @@
                         <v-layout row wrap>
                             <v-flex md4 xs12 class="text-xs-center">
                                 <v-avatar color="indigo" :size="150" class="mb-3">
-                                    <img :src="require('@/assets/images/profile.jpg')" alt="profile" >
+                                    <v-img
+                                        alt="profile"
+                                        :src="require('@/assets/images/profile.jpg')"
+                                        :lazy-src="require('@/assets/images/place-holder.jpg')"></v-img>
                                 </v-avatar>
                                 <h4 class="subheading orange--text text--darken-3">{{ name }}</h4>
                                 <p>
