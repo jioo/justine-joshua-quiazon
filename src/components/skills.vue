@@ -31,18 +31,18 @@
                         description: 'Languages & some libraries I frequently use.',
                         icon: 'library_books',
                         list: [
-                            { name: 'HTML' }, 
-                            { name: 'CSS' },
-                            { name: 'Javascript' }, 
-                            { name: 'C#' },
-                            { name: 'PHP' }, 
-                            { name: 'SQL' },
-                            { name: 'LINQ' },
-                            { name: 'jQuery' },
-                            { name: 'JWT' },
-                            { name: 'Vuex' },
-                            { name: 'AutoMapper' },
-                            { name: 'Axios' }
+                            { name: 'HTML', src: require('@/assets/images/icons/html5.png') },  
+                            { name: 'CSS', src: require('@/assets/images/icons/css3.png') }, 
+                            { name: 'Javascript', src: require('@/assets/images/icons/javascript.jpg') },  
+                            { name: 'C#', src: require('@/assets/images/icons/csharp.jpg') }, 
+                            { name: 'PHP', src: require('@/assets/images/icons/php.png') },  
+                            { name: 'SQL', src: require('@/assets/images/icons/sql.png') }, 
+                            { name: 'LINQ', src: require('@/assets/images/icons/dotnet.png') }, 
+                            { name: 'jQuery', src: require('@/assets/images/icons/jquery.jpg') }, 
+                            { name: 'JWT', src: require('@/assets/images/icons/jwt.png') }, 
+                            { name: 'Vuex', src: require('@/assets/images/icons/vue.png') }, 
+                            { name: 'AutoMapper', src: require('@/assets/images/icons/automapper.png') }, 
+                            { name: 'Axios', src: require('@/assets/images/icons/axios.png') }
                         ]
                     },
                     { 
@@ -50,17 +50,16 @@
                         description: 'Partial list of my favorite frameworks.',
                         icon: 'apps',
                         list: [
-                            { name: 'Asp.Net MVC' }, 
-                            { name: '.Net Core' }, 
-                            { name: 'Identity' },
-                            { name: 'Entity' },
-                            { name: 'OAuth2' },
-                            { name: 'Vue' },
-                            { name: 'Nuxt' },
-                            { name: 'Vuetify' },
-                            { name: 'Bootstrap' },
-                            { name: 'Laravel' }, 
-                            { name: 'CodeIgniter' }
+                            { name: 'Asp.Net MVC', src: require('@/assets/images/icons/dotnet.png') }, 
+                            { name: '.Net Core', src: require('@/assets/images/icons/dotnet.png') }, 
+                            { name: 'Identity', src: require('@/assets/images/icons/dotnet.png') },
+                            { name: 'Entity', src: require('@/assets/images/icons/dotnet.png') },
+                            { name: 'Vue', src: require('@/assets/images/icons/vue.png') },
+                            { name: 'Nuxt', src: require('@/assets/images/icons/nuxt.png') },
+                            { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.png') },
+                            { name: 'Bootstrap', src: require('@/assets/images/icons/bootstrap.png') },
+                            { name: 'Laravel', src: require('@/assets/images/icons/laravel.png') }, 
+                            { name: 'CodeIgniter', src: require('@/assets/images/icons/codeigniter.png') }
                         ]
                     },
                     { 
@@ -68,15 +67,15 @@
                         description: 'Tools that make my works efficient.',
                         icon: 'build',
                         list: [
-                            { name: 'VS Code' },
-                            { name: 'Visual Studio' },
-                            { name: 'VS Team Services' },
-                            { name: 'Git' },
-                            { name: 'Npm' },
-                            { name: 'Vue-cli' },
-                            { name: 'Webpack' },
-                            { name: 'Xampp ' },
-                            { name: 'IIS' }
+                            { name: 'VS Code', src: require('@/assets/images/icons/vscode.png') },
+                            { name: 'Visual Studio', src: require('@/assets/images/icons/visualstudio.png') },
+                            { name: 'Github', src: require('@/assets/images/icons/github.png') },
+                            { name: 'VS Team Services', src: require('@/assets/images/icons/vsteamservices.jpg') },
+                            { name: 'npm', src: require('@/assets/images/icons/npm.png') },
+                            { name: 'vue-cli', src: require('@/assets/images/icons/vue.png') },
+                            { name: 'webpack', src: require('@/assets/images/icons/webpack.png') },
+                            { name: 'xampp ', src: require('@/assets/images/icons/xampp.png') },
+                            { name: 'IIS', src: require('@/assets/images/icons/microsoft.png') }
                         ]
                     }
                 ],

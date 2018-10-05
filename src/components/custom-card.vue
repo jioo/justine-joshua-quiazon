@@ -12,7 +12,15 @@
         <v-card-text>
             <v-layout row wrap align-center>
                 <div v-for="(item, index) in items" :key="index" class="text-xs-center">
-                    <v-chip class="white--text" color="orange">{{ item.name }}</v-chip>
+                    <v-chip class="white--text" color="orange">
+                        <v-avatar class="white black--text">
+                            <v-img 
+                                :alt="item.name"
+                                :src="item.src"
+                                :lazy-src="require('@/assets/images/place-holder-white.png')"></v-img>
+                        </v-avatar>
+                        {{ item.name }}
+                    </v-chip>
                 </div>
             </v-layout>
         </v-card-text>
