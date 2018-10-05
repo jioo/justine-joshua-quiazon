@@ -31,18 +31,18 @@
                         description: 'Languages & some libraries I frequently use.',
                         icon: 'library_books',
                         list: [
-                            { name: 'HTML', src: require('@/assets/images/icons/html5.png') },  
-                            { name: 'CSS', src: require('@/assets/images/icons/css3.png') }, 
-                            { name: 'Javascript', src: require('@/assets/images/icons/javascript.jpg') },  
-                            { name: 'C#', src: require('@/assets/images/icons/csharp.jpg') }, 
-                            { name: 'PHP', src: require('@/assets/images/icons/php.png') },  
-                            { name: 'SQL', src: require('@/assets/images/icons/sql.png') }, 
-                            { name: 'LINQ', src: require('@/assets/images/icons/dotnet.png') }, 
-                            { name: 'jQuery', src: require('@/assets/images/icons/jquery.jpg') }, 
-                            { name: 'JWT', src: require('@/assets/images/icons/jwt.png') }, 
-                            { name: 'Vuex', src: require('@/assets/images/icons/vue.png') }, 
-                            { name: 'AutoMapper', src: require('@/assets/images/icons/automapper.png') }, 
-                            { name: 'Axios', src: require('@/assets/images/icons/axios.png') }
+                            { name: 'HTML', src: require('@/assets/images/icons/html5.png'), url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },  
+                            { name: 'CSS', src: require('@/assets/images/icons/css3.png'), url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3' }, 
+                            { name: 'Javascript', src: require('@/assets/images/icons/javascript.png'), url: 'https://developer.mozilla.org/bm/docs/Web/JavaScript' },  
+                            { name: 'C#', src: require('@/assets/images/icons/csharp.png'), url: 'https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/' }, 
+                            { name: 'PHP', src: require('@/assets/images/icons/php.png'), url: 'http://php.net/' },  
+                            { name: 'SQL', src: require('@/assets/images/icons/sql.png'), url: 'https://www.w3schools.com/sql/' }, 
+                            { name: 'LINQ', src: require('@/assets/images/icons/dotnet.png'), url: 'https://msdn.microsoft.com/en-us/library/bb308959.aspx' }, 
+                            { name: 'jQuery', src: require('@/assets/images/icons/jquery.png'), url: 'https://jquery.com/' }, 
+                            { name: 'JWT', src: require('@/assets/images/icons/jwt.png'), url: 'https://jwt.io/' }, 
+                            { name: 'Vuex', src: require('@/assets/images/icons/vue.png'), url: 'https://vuex.vuejs.org/' }, 
+                            { name: 'AutoMapper', src: require('@/assets/images/icons/automapper.png'), url: 'https://automapper.org/' }, 
+                            { name: 'Axios', src: require('@/assets/images/icons/axios.png'), url: 'https://github.com/axios/axios' }
                         ]
                     },
                     { 
@@ -50,16 +50,16 @@
                         description: 'Partial list of my favorite frameworks.',
                         icon: 'apps',
                         list: [
-                            { name: 'Asp.Net MVC', src: require('@/assets/images/icons/dotnet.png') }, 
-                            { name: '.Net Core', src: require('@/assets/images/icons/dotnet.png') }, 
-                            { name: 'Identity', src: require('@/assets/images/icons/dotnet.png') },
-                            { name: 'Entity', src: require('@/assets/images/icons/dotnet.png') },
-                            { name: 'Vue', src: require('@/assets/images/icons/vue.png') },
-                            { name: 'Nuxt', src: require('@/assets/images/icons/nuxt.png') },
-                            { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.png') },
-                            { name: 'Bootstrap', src: require('@/assets/images/icons/bootstrap.png') },
-                            { name: 'Laravel', src: require('@/assets/images/icons/laravel.png') }, 
-                            { name: 'CodeIgniter', src: require('@/assets/images/icons/codeigniter.png') }
+                            { name: 'Asp.Net MVC', src: require('@/assets/images/icons/dotnet.png'), url: 'https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started' }, 
+                            { name: '.Net Core', src: require('@/assets/images/icons/dotnet.png'), url: 'https://docs.microsoft.com/en-us/aspnet/core' }, 
+                            { name: 'Identity', src: require('@/assets/images/icons/dotnet.png'), url: 'https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
+                            { name: 'Entity', src: require('@/assets/images/icons/dotnet.png'), url: 'https://msdn.microsoft.com/en-us/library/gg696172(v=vs.103).aspx' },
+                            { name: 'Vue', src: require('@/assets/images/icons/vue.png'), url: 'https://vuejs.org/' },
+                            { name: 'Nuxt', src: require('@/assets/images/icons/nuxt.png'), url: 'https://nuxtjs.org/' },
+                            { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.png'), url: 'https://vuetifyjs.com' },
+                            { name: 'Bootstrap', src: require('@/assets/images/icons/bootstrap.png'), url: 'http://getbootstrap.com/' },
+                            { name: 'Laravel', src: require('@/assets/images/icons/laravel.png'), url: 'https://laravel.com/' }, 
+                            { name: 'CodeIgniter', src: require('@/assets/images/icons/codeigniter.png'), url: 'https://www.codeigniter.com/' }
                         ]
                     },
                     { 
@@ -67,15 +67,15 @@
                         description: 'Tools that make my works efficient.',
                         icon: 'build',
                         list: [
-                            { name: 'VS Code', src: require('@/assets/images/icons/vscode.png') },
-                            { name: 'Visual Studio', src: require('@/assets/images/icons/visualstudio.png') },
-                            { name: 'Github', src: require('@/assets/images/icons/github.png') },
-                            { name: 'VS Team Services', src: require('@/assets/images/icons/vsteamservices.jpg') },
-                            { name: 'npm', src: require('@/assets/images/icons/npm.png') },
-                            { name: 'vue-cli', src: require('@/assets/images/icons/vue.png') },
-                            { name: 'webpack', src: require('@/assets/images/icons/webpack.png') },
-                            { name: 'xampp ', src: require('@/assets/images/icons/xampp.png') },
-                            { name: 'IIS', src: require('@/assets/images/icons/microsoft.png') }
+                            { name: 'VS Code', src: require('@/assets/images/icons/vscode.png'), url: 'https://code.visualstudio.com/' },
+                            { name: 'Visual Studio', src: require('@/assets/images/icons/visualstudio.png'), url: 'https://visualstudio.microsoft.com/' },
+                            { name: 'Github', src: require('@/assets/images/icons/github.png'), url: 'https://github.com/' },
+                            { name: 'VS Team Services', src: require('@/assets/images/icons/vsteamservices.png'), url: 'https://visualstudio.microsoft.com/team-services/' },
+                            { name: 'npm', src: require('@/assets/images/icons/npm.png'), url: 'https://www.npmjs.com/' },
+                            { name: 'vue-cli', src: require('@/assets/images/icons/vue.png'), url: 'https://cli.vuejs.org/' },
+                            { name: 'webpack', src: require('@/assets/images/icons/webpack.png'), url: 'https://webpack.js.org' },
+                            { name: 'xampp ', src: require('@/assets/images/icons/xampp.png'), url: 'https://www.apachefriends.org' },
+                            { name: 'IIS', src: require('@/assets/images/icons/microsoft.png'), url: 'https://www.iis.net/' }
                         ]
                     }
                 ],

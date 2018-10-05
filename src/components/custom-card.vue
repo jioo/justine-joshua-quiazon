@@ -12,12 +12,11 @@
         <v-card-text>
             <v-layout row wrap align-center>
                 <div v-for="(item, index) in items" :key="index" class="text-xs-center">
-                    <v-chip class="white--text" color="orange">
+                    <v-chip class="white--text" color="orange"
+                    @click.prevent="notif" v-on:dblclick="redirectTo(item.url)">
                         <v-avatar class="white black--text">
-                            <v-img 
-                                :alt="item.name"
-                                :src="item.src"
-                                :lazy-src="require('@/assets/images/place-holder-white.png')"></v-img>
+                            <v-img :alt="item.name" :src="item.src"
+                            :lazy-src="require('@/assets/images/place-holder-white.png')"></v-img>
                         </v-avatar>
                         {{ item.name }}
                     </v-chip>
@@ -28,6 +27,8 @@
 </template>
 
 <script>
+    import { EventBus } from '@/event-bus.js'
+
     export default {
         props: {
             icon: {
@@ -48,6 +49,16 @@
             items: {
                 type: Array,
                 required: true
+            }
+        },
+
+        methods: {
+            notif () {
+                EventBus.$emit('toggle-snackbar', 'Double click the icon to redirect')
+            },
+
+            redirectTo (url) {
+                window.open(url, '_blank')
             }
         }
     }
