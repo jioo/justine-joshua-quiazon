@@ -20,7 +20,7 @@
                     <v-icon small class="red--text">favorite</v-icon>
                     by me
                     <v-icon small class="white--text">copyright</v-icon>
-                     2018
+                     {{ year }}
                 </div>
             </v-card-actions>
         </v-card>
@@ -50,6 +50,12 @@
                         url: 'https://www.linkedin.com/in/justine-joshua-quiazon-13a000145/'
                     }
                 ]
+            }
+        },
+
+        computed: {
+            year () {
+                return new Date().getFullYear()
             }
         },
 
