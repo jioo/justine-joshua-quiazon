@@ -5,8 +5,7 @@
             :lazy-src="require('@/assets/images/place-holder.jpg')"
             :height="innerHeight"
             alt="home"
-            v-resize="onResize" 
-            class="grey lighten-2">
+            v-resize="onResize">
             
             <web-gl></web-gl>
             <v-layout column align-center justify-center fill-height class="has-elevation">
@@ -16,7 +15,7 @@
                     {{ message }}
                 </h1>
 
-                <div class="headline" v-if="currentBreakpoint != 'xs'">
+                <div class="headline" v-if="!isMobile">
                     <vue-typer :repeat="0" :text="description"></vue-typer>
                 </div>
 
@@ -30,6 +29,7 @@
 
 <script>
     import WebGl from './web-gl'
+    import isMobile from 'ismobilejs'
 
     export default {
         components: {
@@ -45,8 +45,8 @@
         },
 
         computed: {
-            currentBreakpoint () {
-                return this.$vuetify.breakpoint.name
+            isMobile () {
+                return isMobile.any
             }
         },
 

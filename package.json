@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
     "gsap": "^2.0.2",
+    "ismobilejs": "^0.4.1",
     "material-design-icons-iconfont": "^3.0.3",
     "prerender-spa-plugin": "^3.4.0",
     "register-service-worker": "^1.0.0",

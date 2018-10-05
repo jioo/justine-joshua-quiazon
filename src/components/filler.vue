@@ -1,6 +1,7 @@
 <template>
     <section>
-        <v-parallax :src="require('@/assets/images/filler-blurred.jpg')" height="450" alt="filler">
+        <!-- For desktop -->
+        <v-parallax v-if="!isMobile" :src="require('@/assets/images/filler-blurred.jpg')" height="450" alt="filler">
             <v-layout row wrap align-center justify-center class="has-elevation">
                 <v-flex xl6 lg6 md8 offset-xs-3>
                     <blockquote class="title white--text mb-3 text-xs-center">
@@ -15,16 +16,40 @@
                 </v-flex>
             </v-layout>
             <vue-particles 
-                v-if="currentBreakpoint != 'xs'"
                 color="#FF9800"
                 shapeType="polygon"
                 :clickEffect="false" 
                 :linesDistance=90 ></vue-particles>
         </v-parallax>
+
+        <!-- For mobile -->
+        <v-img
+            v-else
+            :src="require('@/assets/images/filler-blurred.jpg')"
+            :lazy-src="require('@/assets/images/place-holder.jpg')"
+            height="450"
+            alt="filler">
+            <v-layout row wrap align-center justify-center fill-height class="has-elevation">
+                <v-flex xl6 lg6 md8 offset-xs-3>
+                    <blockquote class="title white--text mb-3 text-xs-center">
+                        <v-icon class="white--text">format_quote</v-icon>
+                        {{ quote }}
+                        <v-icon class="white--text">format_quote</v-icon>
+                    </blockquote>
+                    <h4 class="subheading orange--text text--lighten-1 text-xs-center">- {{ quoteBy }}</h4>
+                    <div class="text-xs-center white--text" v-for="(item, index) in titles" :key="index">
+                        {{ item.name }}
+                    </div>
+                </v-flex>
+            </v-layout>
+        </v-img>
+
     </section>
 </template>
 
 <script>
+    import isMobile from 'ismobilejs'
+
     export default {
         data () {
             return {
@@ -39,8 +64,8 @@
         },
 
         computed: {
-            currentBreakpoint () {
-                return this.$vuetify.breakpoint.name
+            isMobile () {
+                return isMobile.any
             }
         }
     }
