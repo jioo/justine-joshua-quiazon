@@ -51,7 +51,7 @@
                         icon: 'apps',
                         list: [
                             { name: 'Asp.Net MVC', src: require('@/assets/images/icons/dotnet.jpg'), url: 'https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started' }, 
-                            { name: '.Net Core', src: require('@/assets/images/icons/dotnet.jpg'), url: 'https://docs.microsoft.com/en-us/aspnet/core' }, 
+                            { name: '.Net Core', src: require('@/assets/images/icons/dotnetcore.jpg'), url: 'https://docs.microsoft.com/en-us/aspnet/core' }, 
                             { name: 'Identity', src: require('@/assets/images/icons/dotnet.jpg'), url: 'https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
                             { name: 'Entity', src: require('@/assets/images/icons/dotnet.jpg'), url: 'https://msdn.microsoft.com/en-us/library/gg696172(v=vs.103).aspx' },
                             { name: 'Vue', src: require('@/assets/images/icons/vue.jpg'), url: 'https://vuejs.org/' },
