@@ -9,7 +9,7 @@
                 </v-flex>
                 
                 <v-flex md6 sm12 v-for="item in projects" :key="item.name">
-                    <v-card hover>
+                    <v-card hover dark>
                         <v-img
                             :src="item.src"
                             :lazy-src="require('@/assets/images/place-holder.jpg')">
@@ -22,6 +22,10 @@
                                 <v-progress-circular indeterminate color="orange"></v-progress-circular>
                             </v-layout>
                         </v-img>
+
+                        <v-card-text class="pb-0">
+                            <span class="subheading">{{ item.name }}</span>
+                        </v-card-text>
 
                         <v-card-text class="pb-0">
                             <v-chip 
@@ -40,6 +44,7 @@
                                 {{ framework.name }}
                             </v-chip>
                         </v-card-text>
+
                         <v-card-actions>
                             <v-spacer></v-spacer>
                             <v-tooltip 
@@ -85,7 +90,7 @@ export default {
                         { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.jpg') },
                     ],
                     actions: [
-                        { name:'Source Code', icon: 'code', link: '' }
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/Dotnet-Core-Attendance-System' }
                     ]
                 },
 
@@ -99,8 +104,8 @@ export default {
                         { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.jpg') },
                     ],
                     actions: [
-                        { name:'Source Code', icon: 'code', link: '' },
-                        { name:'Website', icon: 'fas fa-globe', link: '' }
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/game-hub' },
+                        { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/game-hub' }
                     ]
                 }
             ]
