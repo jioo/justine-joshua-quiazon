@@ -27,9 +27,16 @@
                                 {{ item.name }}
                             </h4>
 
-                            <v-tooltip top v-for="(item, index) in externalUrl" :key="index">
-                                <v-btn flat small icon :color="item.color" slot="activator" 
-                                @click="redirectTo(item.url)" :aria-label="item.tooltip">
+                            <v-tooltip 
+                                top 
+                                v-for="(item, index) in externalUrl" 
+                                :key="index">
+                                <v-btn 
+                                    flat small icon 
+                                    :color="item.color" 
+                                    slot="activator" 
+                                    @click="redirectTo(item.url)" 
+                                    :aria-label="item.tooltip">
                                     <v-icon :small="item.smallIcon" >{{ item.icon }}</v-icon>
                                 </v-btn>
                                 <span>{{ item.tooltip }}</span>
@@ -45,46 +52,46 @@
 </template>
 
 <script>
-    export default {
-        data () {
-            return {
-                name: 'Harold Javier',
-                position: 'General Manager, BDF Corporation',
-                titles: [
-                    { key:'t-1', name: 'General Manager, BDF Corporation' },
-                    { key:'t-2', name: '.NET Trainer and Developer' }
-                ],
-                testimonial: 'Lorem ipsum sit amet, his saepe ubique inermis et, in eam stet possim. Ex liber ' +
-                'iisque mediocrem vix. Vix mollis omnesque ex. Duo ne duis eius, his ex atqui soluta ' + 
-                'insolens. Meis habemus cum an.',
-                externalUrl: [
-                    { 
-                        tooltip: 'Website', 
-                        icon: 'fas fa-globe',
-                        smallIcon: true, 
-                        color: 'grey darken-2', 
-                        url: 'http://www.haroldjavier.com/'
-                    },
-                    { 
-                        tooltip: 'Blog', 
-                        icon: 'fab fa-blogger', 
-                        color: 'orange darken-2', 
-                        url: 'http://dotnetfrommanila.blogspot.com/'
-                    },
-                    { 
-                        tooltip: 'Linkedin', 
-                        icon: 'fab fa-linkedin', 
-                        color: 'blue darken-1', 
-                        url: 'https://www.linkedin.com/in/harold-javier-096b126/'
-                    }
-                ]
-            }
-        },
+export default {
+    data () {
+        return {
+            name: 'Harold Javier',
+            position: 'General Manager, BDF Corporation',
+            titles: [
+                { key:'t-1', name: 'General Manager, BDF Corporation' },
+                { key:'t-2', name: '.NET Trainer and Developer' }
+            ],
+            testimonial: 'Lorem ipsum sit amet, his saepe ubique inermis et, in eam stet possim. Ex liber ' +
+            'iisque mediocrem vix. Vix mollis omnesque ex. Duo ne duis eius, his ex atqui soluta ' + 
+            'insolens. Meis habemus cum an.',
+            externalUrl: [
+                { 
+                    tooltip: 'Website', 
+                    icon: 'fas fa-globe',
+                    smallIcon: true, 
+                    color: 'grey darken-2', 
+                    url: 'http://www.haroldjavier.com/'
+                },
+                { 
+                    tooltip: 'Blog', 
+                    icon: 'fab fa-blogger', 
+                    color: 'orange darken-2', 
+                    url: 'http://dotnetfrommanila.blogspot.com/'
+                },
+                { 
+                    tooltip: 'Linkedin', 
+                    icon: 'fab fa-linkedin', 
+                    color: 'blue darken-1', 
+                    url: 'https://www.linkedin.com/in/harold-javier-096b126/'
+                }
+            ]
+        }
+    },
 
-        methods: {
-            redirectTo (url) {
-                window.open(url, '_blank')
-            }
+    methods: {
+        redirectTo (url) {
+            window.open(url, '_blank')
         }
     }
+}
 </script>

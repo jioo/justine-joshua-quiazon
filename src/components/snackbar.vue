@@ -8,21 +8,21 @@
 </template>
 
 <script>
-    import { EventBus } from '@/event-bus.js'
+import { EventBus } from '@/event-bus.js'
 
-    export default {
-        data () {
-            return {
-                snackbar: false,
-                text: ''
-            }
-        },
-
-        created () {
-            EventBus.$on('toggle-snackbar', (data) => {
-                this.snackbar = true
-                this.text = data
-            })
+export default {
+    data () {
+        return {
+            snackbar: false,
+            text: ''
         }
+    },
+
+    created () {
+        EventBus.$on('toggle-snackbar', (data) => {
+            this.snackbar = true
+            this.text = data
+        })
     }
+}
 </script>

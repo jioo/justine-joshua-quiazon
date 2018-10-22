@@ -46,59 +46,58 @@
 </template>
 
 <script>
-    import { EventBus } from '@/event-bus.js'
+import { EventBus } from '@/event-bus.js'
+import Common from '@/mixins/common.js'
 
-    export default {
-        data () {
-            return {
-                contacts: [
-                    {
-                        icon: 'email',
-                        value: 'jio.qzn@gmail.com'
-                    },
-                    {
-                        icon: 'phone',
-                        value: '09454253187'
-                    },
-                    {
-                        icon: 'location_on',
-                        value: 'Las Piñas City, Philippines'
-                    },
-                ],
+export default {
+    mixins: [ Common ],
 
-                actions: [
-                    { 
-                        tooltip: 'Messenger', 
-                        icon: 'fab icon fa-facebook-messenger', 
-                        color: 'blue', 
-                        description: 'Send me a message request.',
-                        url: 'https://m.me/jio.quiazon'
-                    },
-                    { 
-                        tooltip: 'Gmail', 
-                        icon: 'fab icon fa-google', 
-                        color: 'red', 
-                        description: 'Email me with your Gmail account.',
-                        url: 'https://mail.google.com/mail/?view=cm&fs=1&to=jio.qzn@gmail.com'
-                    }
-                ]
-            }
-        },
+    data () {
+        return {
+            contacts: [
+                {
+                    icon: 'email',
+                    value: 'jio.qzn@gmail.com'
+                },
+                {
+                    icon: 'phone',
+                    value: '09454253187'
+                },
+                {
+                    icon: 'location_on',
+                    value: 'Las Piñas City, Philippines'
+                },
+            ],
 
-        methods: {
-            redirectTo (url) {
-                window.open(url, '_blank')
-            },
+            actions: [
+                { 
+                    tooltip: 'Messenger', 
+                    icon: 'fab icon fa-facebook-messenger', 
+                    color: 'blue', 
+                    description: 'Send me a message request.',
+                    url: 'https://m.me/jio.quiazon'
+                },
+                { 
+                    tooltip: 'Gmail', 
+                    icon: 'fab icon fa-google', 
+                    color: 'red', 
+                    description: 'Email me with your Gmail account.',
+                    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=jio.qzn@gmail.com'
+                }
+            ]
+        }
+    },
 
-            copyToClipboard (text) {
-                this.$copyText(text).then(function (e) {
-                    EventBus.$emit('toggle-snackbar', 'Copied to clipboard!')
-                }, function (e) {
-                    console.log(e)
-                })
-            }
+    methods: {
+        copyToClipboard (text) {
+            this.$copyText(text).then(function (e) {
+                EventBus.$emit('toggle-snackbar', 'Copied to clipboard!')
+            }, function (e) {
+                console.log(e)
+            })
         }
     }
+}
 </script>
 
 <style scoped>
@@ -106,7 +105,7 @@
         cursor: pointer;
     }
 
-    .rounded-card{
+    .rounded-card {
         border-radius:40px;
     }
 </style>

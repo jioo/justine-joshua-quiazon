@@ -27,39 +27,38 @@
 </template>
 
 <script>
-    import { EventBus } from '@/event-bus.js'
+import { EventBus } from '@/event-bus.js'
+import Common from '@/mixins/common.js'
 
-    export default {
-        props: {
-            icon: {
-                type: String,
-                required: true
-            },
+export default {
+    mixins: [ Common ],
 
-            title: {
-                type: String,
-                required: true
-            },
-
-            description: {
-                type: String,
-                required: true
-            },
-
-            items: {
-                type: Array,
-                required: true
-            }
+    props: {
+        icon: {
+            type: String,
+            required: true
         },
 
-        methods: {
-            notif () {
-                EventBus.$emit('toggle-snackbar', 'Double click the icon to redirect')
-            },
+        title: {
+            type: String,
+            required: true
+        },
 
-            redirectTo (url) {
-                window.open(url, '_blank')
-            }
+        description: {
+            type: String,
+            required: true
+        },
+
+        items: {
+            type: Array,
+            required: true
+        }
+    },
+
+    methods: {
+        notif () {
+            EventBus.$emit('toggle-snackbar', 'Double click the icon to redirect')
         }
     }
+}
 </script>

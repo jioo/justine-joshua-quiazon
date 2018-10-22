@@ -48,27 +48,27 @@
 </template>
 
 <script>
-    import isMobile from 'ismobilejs'
+import isMobile from 'ismobilejs'
 
-    export default {
-        data () {
-            return {
-                quote: 'We like to think we spend our time power typing, ' +
-                'but we actually spend most of our time staring into the abyss.',
-                quoteBy: 'Douglas Crockford',
-                titles: [
-                    { name: 'principal discoverer of JSON, ' },
-                    { name: 'creator of JSLint' }
-                ]
-            }
-        },
+export default {
+    data () {
+        return {
+            quote: 'We like to think we spend our time power typing, ' +
+            'but we actually spend most of our time staring into the abyss.',
+            quoteBy: 'Douglas Crockford',
+            titles: [
+                { name: 'principal discoverer of JSON, ' },
+                { name: 'creator of JSLint' }
+            ]
+        }
+    },
 
-        computed: {
-            isMobile () {
-                return isMobile.any
-            }
+    computed: {
+        isMobile () {
+            return isMobile.any
         }
     }
+}
 </script>
 
 <style scoped>

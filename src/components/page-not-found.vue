@@ -14,20 +14,20 @@
 </template>
 
 <script>
-    export default {
-        data () {
-            return {
-                message: 'Error 404: Page not found'
-            }
-        },
+export default {
+    data () {
+        return {
+            message: 'Error 404: Page not found'
+        }
+    },
 
-        metaInfo () {
-            return {
-                title: 'Page not found',
-                titleTemplate: '%s', 
-            }
+    metaInfo () {
+        return {
+            title: 'Page not found',
+            titleTemplate: '%s', 
         }
     }
+}
 </script>
 
 <style>

@@ -20,7 +20,7 @@
                     <v-icon small class="red--text">favorite</v-icon>
                     by me
                     <v-icon small class="white--text">copyright</v-icon>
-                     {{ year }}
+                     {{ new Date().getFullYear() }}
                 </div>
             </v-card-actions>
         </v-card>
@@ -28,42 +28,34 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                currentVersion: `v${process.env.VERSION}`,
-                repository: 'https://github.com/jioo/justine-joshua-quiazon',
-                socialPlugins: [
-                    {
-                        label: 'Facebook',
-                        icon: 'fab fa-facebook',
-                        url: 'https://www.facebook.com/jio.quiazon'
-                    },
-                    {
-                        label: 'Github',
-                        icon: 'fab fa-github',
-                        url: 'https://github.com/jioo'
-                    },
-                    {
-                        label: 'Linkedin',
-                        icon: 'fab fa-linkedin',
-                        url: 'https://www.linkedin.com/in/justine-joshua-quiazon-13a000145/'
-                    }
-                ]
-            }
-        },
+import Common from '@/mixins/common.js'
 
-        computed: {
-            year () {
-                return new Date().getFullYear()
-            }
-        },
+export default {
+    mixins: [ Common ],
 
-        methods: {
-            redirectTo (url) {
-                window.open(url, '_blank')
-            }
+    data() {
+        return {
+            currentVersion: `v${process.env.VERSION}`,
+            repository: 'https://github.com/jioo/justine-joshua-quiazon',
+            socialPlugins: [
+                {
+                    label: 'Facebook',
+                    icon: 'fab fa-facebook',
+                    url: 'https://www.facebook.com/jio.quiazon'
+                },
+                {
+                    label: 'Github',
+                    icon: 'fab fa-github',
+                    url: 'https://github.com/jioo'
+                },
+                {
+                    label: 'Linkedin',
+                    icon: 'fab fa-linkedin',
+                    url: 'https://www.linkedin.com/in/justine-joshua-quiazon-13a000145/'
+                }
+            ]
         }
     }
+}
 </script>
 

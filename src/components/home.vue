@@ -28,32 +28,32 @@
 </template>
 
 <script>
-    import WebGl from './web-gl'
-    import isMobile from 'ismobilejs'
+import WebGl from './web-gl'
+import isMobile from 'ismobilejs'
 
-    export default {
-        components: {
-            WebGl
-        },
+export default {
+    components: {
+        WebGl
+    },
 
-        data () {
-            return {
-                innerHeight: window.innerHeight,
-                message: 'Hi, I\'m Jio.',
-                description: 'A Software Developer that writes clean, elegant, and efficient code.'
-            }
-        },
-
-        computed: {
-            isMobile () {
-                return isMobile.any
-            }
-        },
-
-        methods: {
-            onResize () {
-                this.innerHeight = window.innerHeight
-            }
+    data () {
+        return {
+            innerHeight: window.innerHeight,
+            message: 'Hi, I\'m Jio.',
+            description: 'A Software Developer that writes clean, elegant, and efficient code.'
         }
-    }   
+    },
+
+    computed: {
+        isMobile () {
+            return isMobile.any
+        }
+    },
+
+    methods: {
+        onResize () {
+            this.innerHeight = window.innerHeight
+        }
+    }
+}   
 </script>

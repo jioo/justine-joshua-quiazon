@@ -36,23 +36,23 @@
 </template>
 
 <script>
-    export default {
-        data () {
-            return {
-                name: 'Justine Joshua Quiazon',
-                job: 'Software Developer',
-                about1: 'Experienced Software Engineer with a demonstrated history of ' +
-                'working in the IT industry. Strong engineering professional with a ' +
-                'Bachelor\'s degree focused in Information Technology from University of ' +
-                'Perpetual Help System DALTA. ',
-                about2: 'I\'ve been a freelance software developer since January 2017. ' +
-                'I\'m having clients and receiving projects through recommendations ' +
-                'of my colleagues because they are confident that I can do it and ' +
-                'they are fully aware of my skills and capabilities. So far, I\'ve ' +
-                'managed to finish all of my projects from small to large businesses ' +
-                'and my clients were all satisfied. I\'m looking forward for more projects ' +
-                'and I\'ll be more than happy to satisfy more clients.'
-            }
+export default {
+    data () {
+        return {
+            name: 'Justine Joshua Quiazon',
+            job: 'Software Developer',
+            about1: 'Experienced Software Engineer with a demonstrated history of ' +
+            'working in the IT industry. Strong engineering professional with a ' +
+            'Bachelor\'s degree focused in Information Technology from University of ' +
+            'Perpetual Help System DALTA. ',
+            about2: 'I\'ve been a freelance software developer since January 2017. ' +
+            'I\'m having clients and receiving projects through recommendations ' +
+            'of my colleagues because they are confident that I can do it and ' +
+            'they are fully aware of my skills and capabilities. So far, I\'ve ' +
+            'managed to finish all of my projects from small to large businesses ' +
+            'and my clients were all satisfied. I\'m looking forward for more projects ' +
+            'and I\'ll be more than happy to satisfy more clients.'
         }
     }
+}
 </script>
