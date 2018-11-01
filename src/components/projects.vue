@@ -1,24 +1,35 @@
 <template>
     <section>
         <v-container grid-list-lg>
-            <v-layout row wrap justify-center my-5 class="text-xs-center">
+            <v-layout
+                class="text-xs-center" 
+                row wrap 
+                justify-center 
+                my-5 
+            >
 
                 <v-flex xs12 my-5>
                     <h2 class="headline orange--text text--darken-3">Projects</h2>
                     <p>{{ description }}</p>
                 </v-flex>
                 
-                <v-flex md6 sm12 v-for="item in projects" :key="item.name">
+                <v-flex 
+                    md6 sm12 
+                    v-for="item in projects" 
+                    :key="item.name"
+                >
                     <v-card hover dark>
                         <v-img
                             :src="item.src"
-                            :lazy-src="require('@/assets/images/place-holder.jpg')">
+                            :lazy-src="require('@/assets/images/place-holder.jpg')"
+                        >
                             <v-layout
                                 slot="placeholder"
                                 fill-height
                                 align-center
                                 justify-center
-                                ma-0>
+                                ma-0
+                            >
                                 <v-progress-circular indeterminate color="orange"></v-progress-circular>
                             </v-layout>
                         </v-img>
@@ -32,14 +43,15 @@
                                 class="white--text" 
                                 color="orange" 
                                 v-for="framework in item.frameworks" 
-                                :key="framework.name">
+                                :key="framework.name"
+                            >
                                 <v-avatar class="white black--text">
                                     <v-img 
                                         :alt="framework.name" 
                                         :src="framework.src" 
                                         transition="scale-transition"
-                                        :lazy-src="require('@/assets/images/place-holder-white.png')">
-                                    </v-img>
+                                        :lazy-src="require('@/assets/images/place-holder-white.png')"
+                                    ></v-img>
                                 </v-avatar>
                                 {{ framework.name }}
                             </v-chip>
@@ -50,12 +62,14 @@
                             <v-tooltip 
                                 top class="px-2"
                                 v-for="(action, index) in item.actions"
-                                :key="index">
+                                :key="index"
+                            >
                                 <v-btn 
                                     icon small
                                     slot="activator"
                                     @click.prevent="redirectTo(action.link)" 
-                                    :aria-label="action.name">
+                                    :aria-label="action.name"
+                                >
                                     <v-icon>{{ action.icon }}</v-icon>
                                 </v-btn>
                                 <span>{{ action.name }}</span>

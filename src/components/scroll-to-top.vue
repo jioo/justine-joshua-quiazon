@@ -3,14 +3,11 @@
         <v-btn
             v-scroll="onScroll"
             v-show="fab"
-            fab
-            small
-            dark
-            fixed
-            bottom
-            right
+            fab small dark
+            fixed bottom right
             color="primary"
-            @click="toTop">
+            @click="toTop"
+        >
             <v-icon>keyboard_arrow_up</v-icon>
         </v-btn>
     </v-fab-transition>

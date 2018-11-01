@@ -5,10 +5,17 @@
             :lazy-src="require('@/assets/images/place-holder.jpg')"
             :height="innerHeight"
             alt="home"
-            v-resize="onResize">
+            v-resize="onResize"
+        >
             
             <web-gl></web-gl>
-            <v-layout column align-center justify-center fill-height class="has-elevation">
+            <v-layout
+                class="has-elevation" 
+                column 
+                align-center 
+                justify-center 
+                fill-height 
+            >
                 <img :src="require('@/assets/images/jio.png')" alt="jio" class="mb-4">
 
                 <h1 class="display-1 white--text has-elevation mb-3">
@@ -16,7 +23,10 @@
                 </h1>
 
                 <div class="headline" v-if="!isMobile">
-                    <vue-typer :repeat="0" :text="description"></vue-typer>
+                    <vue-typer 
+                        :repeat="0" 
+                        :text="description"
+                    ></vue-typer>
                 </div>
 
                 <p class="headline white--text" v-else>

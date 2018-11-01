@@ -1,15 +1,28 @@
 <template>
     <section class="orange lighten-5">
         <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-5 text-xs-center">
+            <v-layout 
+                row wrap 
+                justify-center 
+                class="my-5 text-xs-center"
+            >
                 <v-flex xs12>
                     <div class="my-3">
                         <h2 class="headline orange--text text--darken-3">Need a Freelance Software Developer?</h2>
                     </div>
                 </v-flex>
 
-                <v-flex md3 sm8 xs12 v-for="(contact) in contacts" :key="contact.value" class="my-2">
-                    <v-card dark ripple hover @click.prevent.native="copyToClipboard(contact.value)" color="grey darken-2" class="pointer rounded-card">
+                <v-flex 
+                    md3 sm8 xs12 
+                    v-for="(contact) in contacts" 
+                    :key="contact.value" class="my-2"
+                >
+                    <v-card 
+                        dark ripple hover 
+                        @click.prevent.native="copyToClipboard(contact.value)" 
+                        color="grey darken-2" 
+                        class="pointer rounded-card"
+                    >
                         <v-card-text>
                             <v-icon x-large color="orange">{{ contact.icon }}</v-icon> <br />
                             <h3 class="mt-2">{{ contact.value }}</h3>
@@ -25,10 +38,19 @@
                         </v-card-text>
                         <v-card-actions>
                             <v-layout row wrap>
-                                <v-flex md3 sm3 xs12 offset-sm2 v-for="(action, index) in actions" :key="index">
+                                <v-flex 
+                                    md3 sm3 xs12 offset-sm2 
+                                    v-for="(action, index) in actions" 
+                                    :key="index"
+                                >
                                     <v-tooltip top>
-                                        <v-btn flat large icon :color="action.color" slot="activator" 
-                                        @click.prevent="redirectTo(action.url)" :aria-label="action.tooltip">
+                                        <v-btn 
+                                            flat large icon 
+                                            :color="action.color" 
+                                            slot="activator" 
+                                            @click.prevent="redirectTo(action.url)" 
+                                            :aria-label="action.tooltip"
+                                        >
                                             <v-icon large>{{ action.icon }}</v-icon>
                                         </v-btn>
                                         <span>{{ action.tooltip }}</span>

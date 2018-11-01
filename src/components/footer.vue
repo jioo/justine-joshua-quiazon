@@ -2,8 +2,13 @@
     <v-footer dark height="auto">
         <v-card class="flex" flat tile>
             <v-card-title class="orange justify-center">
-                <v-btn dark icon v-for="(item, index) in socialPlugins" :key="index" 
-                class="mx-3" :aria-label="item.label">
+                <v-btn
+                    class="mx-3" 
+                    dark icon 
+                    v-for="(item, index) in socialPlugins" 
+                    :key="index" 
+                    :aria-label="item.label"
+                >
                     <v-icon size="24px" @click="redirectTo(item.url)">{{ item.icon }}</v-icon>
                 </v-btn>
 

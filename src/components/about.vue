@@ -13,7 +13,8 @@
                                     <v-img
                                         alt="profile"
                                         :src="require('@/assets/images/profile.jpg')"
-                                        :lazy-src="require('@/assets/images/place-holder.jpg')"></v-img>
+                                        :lazy-src="require('@/assets/images/place-holder.jpg')"
+                                    ></v-img>
                                 </v-avatar>
                                 <h4 class="subheading orange--text text--darken-3">{{ name }}</h4>
                                 <p>

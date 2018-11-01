@@ -6,8 +6,8 @@
                     erase-style='clear'
                     :type-delay='120'
                     :pre-erase-delay='6000'
-                    :text="message">
-                </vue-typer>
+                    :text="message"
+                ></vue-typer>
             </div>
         </v-layout>
     </v-container>

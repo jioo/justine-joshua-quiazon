@@ -2,13 +2,17 @@
     <section class="orange lighten-5">
         <v-container>
             <v-layout row wrap align-center my-5>
-                <v-flex xs12 md4 sm4 v-for="(item, index) in items" :key="index" my-5>
+                <v-flex 
+                    xs12 md4 sm4 my-5 
+                    v-for="(item, index) in items" 
+                    :key="index"
+                >
                     <custom-card
                         :title="item.title" 
                         :description="item.description" 
                         :icon="item.icon" 
-                        :items="item.list">
-                    </custom-card>
+                        :items="item.list"
+                    ></custom-card>
                 </v-flex>
             </v-layout>
         </v-container>
