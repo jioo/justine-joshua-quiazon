@@ -5,7 +5,6 @@
             <about />
             <skills />
             <filler />
-            <!-- <testimonials /> -->
             <projects />
             <contact />
             <scroll-to-top />
@@ -20,7 +19,6 @@
     import About from '@/components/about'
     import Skills from '@/components/skills'
     import Filler from '@/components/filler'
-    import Testimonials from '@/components/testimonials'
     import Projects from '@/components/projects'
     import Contact from '@/components/contact'
     import ScrollToTop from '@/components/scroll-to-top'
@@ -33,7 +31,6 @@
             About,
             Skills,
             Filler,
-            Testimonials,
             Projects,
             Contact,
             ScrollToTop,

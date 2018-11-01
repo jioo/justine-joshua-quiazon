@@ -96,7 +96,7 @@ export default {
 
                 {
                     name: 'Gamehub',
-                    src: require('@/assets/images/attendance-system.png'),
+                    src: require('@/assets/images/game-hub.png'),
                     toggle: false,
                     frameworks: [
                         { name: 'Storyblok', src: require('@/assets/images/icons/storyblok.jpg') },
@@ -104,8 +104,8 @@ export default {
                         { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.jpg') },
                     ],
                     actions: [
-                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/game-hub' },
-                        { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/game-hub' }
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/games' },
+                        { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/games' }
                     ]
                 }
             ]
