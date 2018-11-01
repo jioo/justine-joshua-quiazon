@@ -1,0 +1,62 @@
+{
+  "name": "justine-joshua-quiazon",
+  "author": "jioo <jio_qzn@yahoo.com>",
+  "description": "My portfolio website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build && serve dist",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "gsap": "^2.0.2",
+    "ismobilejs": "^0.4.1",
+    "material-design-icons-iconfont": "^3.0.3",
+    "prerender-spa-plugin": "^3.4.0",
+    "register-service-worker": "^1.0.0",
+    "three": "^0.96.0",
+    "vue": "^2.5.17",
+    "vue-analytics": "^5.16.0",
+    "vue-clipboard2": "^0.2.1",
+    "vue-meta": "^1.5.3",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.1",
+    "vue-typer": "^1.2.0",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-plugin-pwa": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "serve": "^10.0.1",
+    "vue-cli-plugin-vuetify": "^0.1.6",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
