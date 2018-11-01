@@ -20,6 +20,8 @@
                 >
                     <v-card hover dark>
                         <v-img
+                            class="pointer"
+                            @click.prevent="redirectTo(item.actions[0].link)"
                             :src="item.src"
                             :lazy-src="require('@/assets/images/place-holder.jpg')"
                         >
@@ -92,7 +94,7 @@ export default {
 
     data () {
         return {
-            description: 'Some of my personal project',
+            description: 'Some of my open source dummy projects.',
             projects: [
                 {
                     name: 'Attendance System',
@@ -118,8 +120,8 @@ export default {
                         { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.jpg') },
                     ],
                     actions: [
-                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/games' },
-                        { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/games' }
+                        { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/games' },
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/games' }
                     ]
                 }
             ]

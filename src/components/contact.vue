@@ -123,10 +123,6 @@ export default {
 </script>
 
 <style scoped>
-    .pointer {
-        cursor: pointer;
-    }
-
     .rounded-card {
         border-radius:40px;
     }

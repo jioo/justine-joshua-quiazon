@@ -2,6 +2,10 @@
     z-index: 100;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .vue-typer .custom.char.typed {
     color: #FFFFFF;
 }
