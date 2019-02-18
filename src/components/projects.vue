@@ -24,6 +24,8 @@
                             @click.prevent="redirectTo(item.actions[0].link)"
                             :src="item.src"
                             :lazy-src="require('@/assets/images/place-holder.jpg')"
+                            max-height="275"
+                            position="top center"
                         >
                             <v-layout
                                 slot="placeholder"
@@ -98,7 +100,7 @@ export default {
             projects: [
                 {
                     name: 'Attendance System',
-                    src: require('@/assets/images/attendance-system.png'),
+                    src: require('@/assets/images/dotnetcore-attendance-demo.gif'),
                     toggle: false,
                     frameworks: [
                         { name: '.Net Core', src: require('@/assets/images/icons/dotnetcore.jpg') },
@@ -122,6 +124,19 @@ export default {
                     actions: [
                         { name:'Website', icon: 'fas fa-globe', link: 'https://jioo.github.io/games' },
                         { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/games' }
+                    ]
+                },
+
+                {
+                    name: 'LaraVuetify',
+                    src: require('@/assets/images/laravuetify-demo.gif'),
+                    toggle: false,
+                    frameworks: [
+                        { name: 'Laravel', src: require('@/assets/images/icons/laravel.jpg') },
+                        { name: 'Vuetify', src: require('@/assets/images/icons/vuetify.jpg') },
+                    ],
+                    actions: [
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/laravuetify' }
                     ]
                 }
             ]
