@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build && serve dist",
+    "build": "vue-cli-service build",
+    "build-serve": "vue-cli-service build && serve dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
