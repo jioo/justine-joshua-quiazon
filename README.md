@@ -2,6 +2,8 @@
 
 My portfolio website using Vue, Vuetify &amp; Vue-Cli-3
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e3dd69e-41a9-4412-bb16-158348591ad0/deploy-status)](https://app.netlify.com/sites/competent-pasteur-c4aa94/deploys) [![paypal](https://img.shields.io/badge/paypal-donate-green.svg)](http://paypal.me/jjquiazon)
+
 url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</a>
 
 ## Google's Lighthouse Score ##
