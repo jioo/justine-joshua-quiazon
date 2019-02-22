@@ -25,7 +25,8 @@
                     <v-icon small class="red--text">favorite</v-icon>
                     by me
                     <v-icon small class="white--text">copyright</v-icon>
-                     {{ new Date().getFullYear() }}
+                    2018 - 
+                    {{ new Date().getFullYear() }}
                 </div>
             </v-card-actions>
         </v-card>
