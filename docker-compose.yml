@@ -1,4 +1,6 @@
 version: '3'
 services:
-  git:
+  api:
     build: .
+    ports:
+     - "5000:5000"
