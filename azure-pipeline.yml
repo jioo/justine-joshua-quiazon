@@ -19,5 +19,5 @@ steps:
 - task: PublishPipelineArtifact@0
   inputs:
     targethPath: '$(Build.ArtifactStagingDirectory)/app.zip'
-    artifactName: 'publish'
+    artifactName: 'drop'
   displayName: 'upload artifact'
