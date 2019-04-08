@@ -16,11 +16,11 @@ steps:
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)/dist'
-    archiveFile: 'dist'
+    archiveFile: 'drop'
   displayName: 'package dist'
 
 - task: PublishPipelineArtifact@0
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/dist.zip'
+    pathtoPublish: '$(Build.SourcesDirectory)/drop.zip'
     artifactName: 'publish'
-  displayName: 'upload artifacts'
+  displayName: 'upload artifact'
