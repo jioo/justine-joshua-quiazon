@@ -13,7 +13,7 @@ steps:
     zip -r dist.zip . -x .git/**\* > /dist
   displayName: 'package dist'
 
-- task: PublishPipelineArtifact@1
+- task: PublishPipelineArtifact@0
   inputs:
     pathtoPublish: '$(Build.SourcesDirectory)/dist.zip'
     artifactName: 'publish'
