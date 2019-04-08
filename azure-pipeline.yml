@@ -12,14 +12,17 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: 'dist\**'
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: |
+     dist/**/*
     targetFolder: $(Build.ArtifactStagingDirectory)
-  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  displayName: 'Copy dist folder'
 
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: $(Build.ArtifactStagingDirectory)
     artifactName: 'publish'
+  displayName: 'publish artifact'
 
 # - task: ArchiveFiles@2
 #   inputs:
