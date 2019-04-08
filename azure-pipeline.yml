@@ -19,7 +19,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)\dist'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
     artifactName: 'publish'
   displayName: 'publish artifact'
 
