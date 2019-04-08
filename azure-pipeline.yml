@@ -9,7 +9,12 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- script: |
+    zip -r dist.zip . -x .git/**\* > /dist
+  displayName: 'package dist'
+
 - task: PublishPipelineArtifact@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/dist'
+    pathtoPublish: '$(Build.SourcesDirectory)/dist.zip'
     artifactName: 'publish'
+  displayName: 'upload artifacts'
