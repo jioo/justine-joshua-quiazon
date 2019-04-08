@@ -13,9 +13,10 @@ steps:
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
-    contents: |
-     dist/**/*
+    contents: 'dist/**/*'
     targetFolder: $(Build.ArtifactStagingDirectory)
+    cleanTargetFolder: true
+    flattenFolders: true
   displayName: 'Copy dist folder'
 
 - task: PublishBuildArtifacts@1
@@ -26,12 +27,12 @@ steps:
 
 # - task: ArchiveFiles@2
 #   inputs:
-#     rootFolderOrFile: '$(Build.SourcesDirectory)'
-#     archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
+#     rootFolderOrFile: '$(Build.SourcesDirectory)\dist'
+#     archiveFile: '$(Build.ArtifactStagingDirectory)\app.zip'
 #   displayName: 'package app'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
-#     targethPath: '$(Build.ArtifactStagingDirectory)/app.zip'
+#     targethPath: '$(Build.ArtifactStagingDirectory)\app.zip'
 #     artifactName: 'publish'
 #   displayName: 'upload artifact'
