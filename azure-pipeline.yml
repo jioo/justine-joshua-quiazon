@@ -10,14 +10,25 @@ steps:
     dir
   displayName: 'npm install and build'
 
-- task: ArchiveFiles@2
+- task: CopyFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/dist/'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
-  displayName: 'package app'
+    contents: 'dist\**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
 
-- task: PublishPipelineArtifact@0
+- task: PublishBuildArtifacts@1
   inputs:
-    targethPath: '$(Build.ArtifactStagingDirectory)/app.zip'
-    artifactName: 'drop'
-  displayName: 'upload artifact'
+    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: 'publish'
+
+# - task: ArchiveFiles@2
+#   inputs:
+#     rootFolderOrFile: '$(Build.SourcesDirectory)'
+#     archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
+#   displayName: 'package app'
+
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     targethPath: '$(Build.ArtifactStagingDirectory)/app.zip'
+#     artifactName: 'publish'
+#   displayName: 'upload artifact'
