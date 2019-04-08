@@ -9,7 +9,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: PublishPipelineArtifact@0
+- task: PublishPipelineArtifact@1
   inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
     artifactName: 'publish'
-    targetPath: 'dist/**/*'
