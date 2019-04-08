@@ -15,13 +15,11 @@ steps:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: 'dist/**/*'
     targetFolder: $(Build.ArtifactStagingDirectory)
-    cleanTargetFolder: true
-    flattenFolders: true
   displayName: 'Copy dist folder'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)\dist'
     artifactName: 'publish'
   displayName: 'publish artifact'
 
