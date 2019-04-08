@@ -12,7 +12,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/dist'
+    rootFolderOrFile: '$(Build.SourcesDirectory)/dist/'
     archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
   displayName: 'package app'
 
