@@ -6,6 +6,18 @@ My portfolio website using Vue, Vuetify &amp; Vue-Cli-3
 
 url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</a>
 
+## Azure CI-CD Pipeline ##
+- [Continous Integration Link](https://jioqzn-yahoo.visualstudio.com/jioo.github.io/_build)
+- [Continous Deployment Link](https://jioqzn-yahoo.visualstudio.com/jioo.github.io/_release)
+
+**Workflows:**
+1. Build Web App
+2. Publish Artifact from `/dist` folder
+3. Push Artifact contents in GH Page Repository: `https://github.com/jioo/jioo.github.io`
+4. Create Github Release
+
+![Azure Workflows](public/img/workflow.jpg)
+
 ## Google's Lighthouse Score ##
 
 ![Lighthouse Score](public/img/lighthouse-score.png)
