@@ -1,0 +1,24 @@
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+    dir
+  displayName: 'npm install and build'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: 'dist/**/*'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+  displayName: 'Copy dist folder'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
+    artifactName: 'publish'
+  displayName: 'Publish Artifact'
