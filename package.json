@@ -2,7 +2,7 @@
   "name": "justine-joshua-quiazon",
   "author": "jioo <jio_qzn@yahoo.com>",
   "description": "My portfolio website",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
