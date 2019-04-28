@@ -20,7 +20,7 @@ url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</
 
 ## Google's Lighthouse Score ##
 
-![Lighthouse Score](public/img/lighthouse-score.png)
+![Lighthouse Score](public/img/lighthouse-score.jpg)
 
 ## Features ##
 
