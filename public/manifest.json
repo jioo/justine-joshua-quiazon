@@ -1,6 +1,10 @@
 {
   "name": "justine-joshua-quiazon",
   "short_name": "jio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FF9800",
   "icons": [
     {
       "src": "windows10/Square71x71Logo.scale-400.png",
@@ -310,9 +314,5 @@
       "src": "firefox/firefox-general-16-16.png",
       "sizes": "16x16"
     }
-  ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#FF9800"
+  ]
 }
