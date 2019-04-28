@@ -40,6 +40,10 @@ url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</
 * [Vue-Meta](https://github.com/declandewet/vue-meta) Manage page meta info in Vue.
 * [Vue-Analytics](https://github.com/MatteoGabriele/vue-analytics) Google Analytics plugin for Vue.
 
+## Online Resources ##
+
+1. [PWABuilder](https://www.pwabuilder.com/imageGenerator) - Quickly and easily create app icons for various platforms in the right size and format.
+
 ## Installation
 ```
 git clone https://github.com/jioo/justine-joshua-quiazon.git
