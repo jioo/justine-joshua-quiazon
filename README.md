@@ -39,11 +39,6 @@ url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</
 * [Vuetify](https://vuetifyjs.com/en/) Material Design Component Framework.
 * [Vue-Meta](https://github.com/declandewet/vue-meta) Manage page meta info in Vue.
 * [Vue-Analytics](https://github.com/MatteoGabriele/vue-analytics) Google Analytics plugin for Vue.
-* [Vue-Typer](https://github.com/cngu/vue-typer) Vue component that simulates a user typing.
-* [Vue-Particles](https://github.com/creotip/vue-particles) Vue component for particles backgrounds.
-* [Three.js](https://threejs.org/) JavaScript 3D library.
-* [TweenMax](https://greensock.com/tweenmax) Animation library.
-* [Decorative Backgrounds](https://github.com/Mamboleoo/DecorativeBackgrounds/)
 
 ## Installation
 ```

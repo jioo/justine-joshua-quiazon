@@ -1,14 +1,7 @@
 <template>
     <v-container fill-height>
         <v-layout align-center justify-center>
-            <div class="headline">
-                <vue-typer 
-                    erase-style='clear'
-                    :type-delay='120'
-                    :pre-erase-delay='6000'
-                    :text="message"
-                ></vue-typer>
-            </div>
+            <div class="headline" v-text="message"></div>
         </v-layout>
     </v-container>
 </template>
@@ -29,9 +22,3 @@ export default {
     }
 }
 </script>
-
-<style>
-    .vue-typer .custom.char.typed {
-        color: #000000 !important;
-    }
-</style>
