@@ -25,7 +25,6 @@ url: <a href="https://jioo.github.io/" target="_blank">https://jioo.github.io/</
 ## Features ##
 
 * Material design with Vuetify CSS Framework
-* (WebGL) Web Graphics Library
 * (PWA) Progressive Web Application 
   * Service Worker for Offline mode
   * Mobile-friendly meta-viewport
