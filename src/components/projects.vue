@@ -96,7 +96,7 @@ export default {
 
     data () {
         return {
-            description: 'Some of my open source dummy projects.',
+            description: 'Some of my pet projects.',
             projects: [
                 {
                     name: 'Attendance System',
@@ -137,6 +137,20 @@ export default {
                     ],
                     actions: [
                         { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/laravuetify' }
+                    ]
+                },
+
+                {
+                    name: 'TAX PH',
+                    src: require('@/assets/images/tax-ph.jpg'),
+                    toggle: false,
+                    frameworks: [
+                        { name: 'Vue', src: require('@/assets/images/icons/vue.jpg') },
+                        { name: 'UIkit', src: require('@/assets/images/icons/uikit.jpg') },
+                    ],
+                    actions: [
+                        { name:'Website', icon: 'fas fa-globe', link: 'https://tax-ph.com' },
+                        { name:'Code Snippets', icon: 'code', link: 'https://gist.github.com/jioo/0e99bd408e7a303511c103ca32df9700' },
                     ]
                 }
             ]
