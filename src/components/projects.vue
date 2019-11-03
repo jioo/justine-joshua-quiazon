@@ -150,7 +150,7 @@ export default {
                     ],
                     actions: [
                         { name:'Website', icon: 'fas fa-globe', link: 'https://tax-ph.com' },
-                        { name:'Code Snippets', icon: 'code', link: 'https://gist.github.com/jioo/0e99bd408e7a303511c103ca32df9700' },
+                        { name:'Source Code', icon: 'code', link: 'https://github.com/jioo/tax-calculator' },
                     ]
                 }
             ]
