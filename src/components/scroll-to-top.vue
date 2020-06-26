@@ -8,7 +8,7 @@
             color="primary"
             @click="toTop"
         >
-            <v-icon>keyboard_arrow_up</v-icon>
+            <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
     </v-fab-transition>
 </template>

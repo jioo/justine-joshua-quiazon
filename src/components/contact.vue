@@ -13,7 +13,7 @@
                 </v-flex>
 
                 <v-flex 
-                    md3 sm8 xs12 
+                    md6 sm8 xs12 
                     v-for="(contact) in contacts" 
                     :key="contact.value" class="my-2"
                 >
@@ -80,10 +80,6 @@ export default {
                 {
                     icon: 'email',
                     value: 'jio.qzn@gmail.com'
-                },
-                {
-                    icon: 'phone',
-                    value: '09454253187'
                 },
                 {
                     icon: 'location_on',

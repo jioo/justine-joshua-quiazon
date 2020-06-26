@@ -2,7 +2,7 @@
   "name": "justine-joshua-quiazon",
   "author": "jioo <jio_qzn@yahoo.com>",
   "description": "My portfolio website",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
+    "@mdi/font": "^5.3.45",
     "material-design-icons-iconfont": "^3.0.3",
     "prerender-spa-plugin": "^3.4.0",
     "register-service-worker": "^1.0.0",
